@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universo dos Jogos Indies - Sugestões</title>
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <header class="bg-gradiente text-center py-5 px-3">
+    <h1 class="display-4 fw-bold">Central de Sugestões</h1>
+    <p class="fs-5 mx-auto mb-0" style="max-width: 700px;">Caso tenha encontrado informações erradas entre em contato com a gente</p>
+  </header>
+
+  <nav class="navbar navbar-expand-sm navbar-dark navbar-superficie">
+    <div class="container">
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+              data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="menu">
+        <ul class="navbar-nav gap-sm-3 text-center"><li class="nav-item"><a class="nav-link" href="index.html">Início</a></li><li class="nav-item"><a class="nav-link" href="jogos.html">Jogos</a></li><li class="nav-item"><a class="nav-link active" aria-current="page" href="contato.html">Contato</a></li></ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5 flex-grow-1">
+    <section>
+      <h2 class="texto-roxo text-center mb-4">O que podemos melhorar na Wiki?</h2>
+
+      <form id="form-sugestao" class="form-sugestao p-4 p-md-5 mx-auto needs-validation" novalidate>
+        <div id="alerta-form" class="alert d-none" role="alert" tabindex="-1"></div>
+
+        <div class="mb-3">
+          <label for="nome" class="form-label">Seu Nome:</label>
+          <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome completo" minlength="3" required>
+          <div class="invalid-feedback">Informe seu nome (mínimo de 3 caracteres).</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Seu E-mail:</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="exemplo@email.com" required>
+          <div class="invalid-feedback">Informe um e-mail válido.</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="tipo" class="form-label">O que deseja sugerir?</label>
+          <select class="form-select" id="tipo" name="tipo" required>
+            <option value="" selected disabled>Selecione uma opção...</option>
+            <option>Adicionar um novo Jogo Indie</option>
+            <option>Corrigir informações/erros de digitação</option>
+            <option>Melhorias no Design/Visual do site</option>
+            <option>Outras ideias e comentários</option>
+          </select>
+          <div class="invalid-feedback">Escolha o tipo de sugestão.</div>
+        </div>
+
+        <div class="mb-4">
+          <label for="mensagem" class="form-label">Detalhes da sua Sugestão:</label>
+          <textarea class="form-control" id="mensagem" name="mensagem" rows="6" minlength="10" maxlength="500"
+                    placeholder="Descreva aqui o que podemos adicionar ou melhorar em nossa página..." required></textarea>
+          <div class="d-flex justify-content-between">
+            <div class="invalid-feedback">Escreva pelo menos 10 caracteres.</div>
+            <small id="contador" class="text-secondary ms-auto">0/500</small>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-enviar w-100 py-3">Enviar Sugestão</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="text-center py-4 mt-4">
+    <p class="mb-0 text-secondary">© 2026 Pietro Henrique Nonnemacher. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
